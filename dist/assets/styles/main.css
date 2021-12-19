@@ -50,4 +50,68 @@ table {
   border-spacing: 0;
 }
 
+nav .right i {
+  font-size: 1.3em;
+  cursor: pointer;
+  transition: all 500ms;
+}
+nav .right i:hover {
+  color: #636e72;
+}
+nav .login {
+  border: 1px solid #b2bec3;
+  border-radius: 5px;
+  color: #636e72;
+  transition: all 500ms;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+nav .login:hover {
+  border: 2px solid #b2bec3;
+}
+nav .login a {
+  text-decoration: none;
+}
+nav .login i {
+  font-size: 1.3em;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  nav .right i {
+    font-size: 0.8em;
+  }
+  nav .login {
+    font-size: 0.8em;
+  }
+  nav .login a {
+    text-decoration: none;
+  }
+  nav .login i {
+    display: none;
+  }
+}
+
+@keyframes myAnim {
+  0% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+  }
+  10% {
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
+  }
+  17% {
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
+  }
+  33% {
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
+  }
+  45% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
