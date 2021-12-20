@@ -1,11 +1,11 @@
-//slider show
+//slider show///////////////////////////////////////////////////////
 
 let sliderIndex = 1;
 
 function setSlide(input, index) {
   sliderIndex = index;
   let item = document.querySelector(`#${input}`);
-  console.log(item.className);
+
   let slides = [...document.querySelector(".slides").children];
   slides.forEach((element) => {
     element.className = "slide";
@@ -21,3 +21,6 @@ setInterval(() => {
 
   setSlide(`slide-${sliderIndex}`, sliderIndex);
 }, 5000);
+
+///swiper js/////////////////////////////////////////////////////////////////////
+

@@ -140,6 +140,97 @@ nav .login i {
   }
 }
 
+.prodoucts .container-fluid .slider-prodoucts {
+  padding: 5px 0;
+}
+.prodoucts .container-fluid .slider-prodoucts .slide {
+  display: flex;
+  justify-content: space-evenly;
+}
+.prodoucts .container-fluid .slider-prodoucts .slide .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid #b2bec3;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.prodoucts .container-fluid .slider-prodoucts .slide .card .image {
+  padding: 10px;
+}
+.prodoucts .container-fluid .slider-prodoucts .slide .card .image img {
+  max-width: 100%;
+  position: relative;
+}
+.prodoucts .container-fluid .slider-prodoucts .slide .card .image .off {
+  position: absolute;
+  top: 5%;
+  right: 10px;
+  display: inline-block;
+  background-color: #ff3838;
+  color: #f5f6fa;
+}
+.prodoucts .container-fluid .slider-prodoucts .slide .card .image .star {
+  display: flex;
+  position: absolute;
+  top: 5%;
+  left: 10px;
+  color: #f1c40f;
+}
+.prodoucts .container-fluid .slider-prodoucts .slide .card .title-card {
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #95a5a6;
+}
+.prodoucts .container-fluid .slider-prodoucts .slide .card .price {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.prodoucts .container-fluid .slider-prodoucts .slide .card .price .icone {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.prodoucts .container-fluid .slider-prodoucts .slide .card .price .icone span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #55efc4;
+  width: 35px;
+  height: 35px;
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 500ms;
+}
+.prodoucts .container-fluid .slider-prodoucts .slide .card .price .icone span:hover {
+  width: 60px;
+  border-radius: 20px;
+}
+.prodoucts .container-fluid .slider-prodoucts .slide .card .price .price-off {
+  margin-top: 15px;
+  color: #636e72;
+  font-weight: bold;
+}
+@media (max-width: 992px) {
+  .prodoucts .card .image .star {
+    font-size: 0.7em;
+  }
+  .prodoucts .card .image .off {
+    font-size: 0.7em;
+  }
+  .prodoucts .card .price .price-off {
+    font-size: 0.7em;
+    font-weight: bolder;
+  }
+  .prodoucts .card .price .icone {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 @keyframes navigation {
   0% {
     animation-timing-function: ease-out;
