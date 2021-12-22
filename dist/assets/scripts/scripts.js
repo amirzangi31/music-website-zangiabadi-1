@@ -40,3 +40,6 @@ setInterval(() => {
   timing -= 1;
   setTime();
 }, 1000);
+
+// handsfree slider ////////////////////////////////////////////////
+
