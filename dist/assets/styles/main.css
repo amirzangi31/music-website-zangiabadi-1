@@ -460,6 +460,77 @@ nav .login i {
   border-radius: 0;
 }
 
+footer .up {
+  background-color: #2c3e50;
+}
+footer .up .container .right {
+  padding: 0 0 0 30px;
+}
+footer .up .container .right .title {
+  font-size: 1.1em;
+  color: white;
+}
+footer .up .container .right .para {
+  color: #95a5a6;
+}
+footer .up .container .right .colap {
+  display: none;
+}
+footer .up .container .left .title {
+  color: white;
+  text-align: center;
+  font-size: 1.1em;
+}
+footer .up .container .left .icone {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5em;
+  color: white;
+  cursor: pointer;
+}
+footer .down {
+  background-color: #34495e;
+}
+footer .down .container .center {
+  text-align: center;
+  color: white;
+  font-size: 1.1em;
+  word-spacing: 3px;
+}
+@media (max-width: 992px) {
+  footer .up .container {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .up .container .right .colap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer .up .container .right .colap p button {
+    width: 150px;
+    color: white;
+    font-size: 1.1em;
+    border: 1px solid white;
+    transition: all 500ms;
+  }
+  footer .up .container .right .colap p button:hover {
+    width: 165px;
+  }
+  footer .up .container .right .colap div .card {
+    background-color: #2c3e50;
+    color: #95a5a6;
+    border: 1px solid #95a5a6;
+  }
+  footer .up .container .right .title {
+    display: none;
+  }
+  footer .up .container .right .para {
+    display: none;
+  }
+}
+
 @keyframes navigation {
   0% {
     animation-timing-function: ease-out;
